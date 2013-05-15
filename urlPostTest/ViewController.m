@@ -32,7 +32,7 @@
     [request setHTTPBody:postData];
     
     //[NSURLConnection connectionWithRequest:request delegate:nil];
-    //Funktion unten 
+    //Changed it to a dispatch_queue_t to free the UI for the User
       
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
