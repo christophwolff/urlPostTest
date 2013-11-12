@@ -24,7 +24,7 @@
     NSData *postData = [post dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO];
     NSString *postLength = [NSString stringWithFormat:@"%d", [post length]];
     
-    NSURL *url = [NSURL URLWithString:@"http://pixelpoesie.com/urlposttest/post.php"];
+    NSURL *url = [NSURL URLWithString:@"[YOURURL]post.php"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
     NSLog(@"%@", post);
